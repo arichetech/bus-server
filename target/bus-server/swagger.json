@@ -1,0 +1,27 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0-SNAPSHOT",
+    "title" : "BUS API Resource"
+  },
+  "basePath" : "/api/v1",
+  "tags" : [ {
+    "name" : "bus-server"
+  } ],
+  "schemes" : [ "https", "http" ],
+  "paths" : {
+    "/bus/all" : {
+      "get" : {
+        "tags" : [ "bus-server" ],
+        "summary" : "get buses",
+        "description" : "",
+        "operationId" : "findAllBuses",
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      }
+    }
+  }
+}
